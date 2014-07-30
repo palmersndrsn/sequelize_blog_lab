@@ -10,7 +10,7 @@ module.exports = {
     	},
     	createdAt: DataTypes.DATE,
     	updatedAt: DataTypes.DATE,
-    	name: DataTypes.STRING,
+      post: DataTypes.STRING,
     	authorId: {
         type: DataTypes.INTEGER,
         foriegnKey: true

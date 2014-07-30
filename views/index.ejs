@@ -4,9 +4,11 @@
 	<title></title>
 </head>
 <body>
- TEST
+<h1>Author index</h1>
+ <ul>
      <% authors.forEach(function(author) {%>
-      <%= author.dataValues.name %>
+   <li><a href="/author/<%= author.dataValues.id %>">   <%= author.dataValues.name %> </li>
     <% }) %>
+    </ul>
 </body>
 </html>

@@ -24,7 +24,7 @@ Object.keys(db).forEach(function(modelName) {
 })
 
 
-// db.author.create({name: "Jim Bob"}).success(function(author){
+// db.post.create({post: "Jim Bob"}).success(function(author){
 //   console.log(author)
 // });
 
@@ -32,16 +32,6 @@ db.author.hasMany(db.post);
 db.post.belongsTo(db.author);
 
 
-// add from routes to place holders 
-// db.post.create()
-//   .success(function(post){
-//     db.author.find().success(function(author){
-//       author.setPosts([post])
-//       .success(function(author) {
-//         console.log(author)
-//       });
-//     });
-//   });
 
 
 module.exports = lodash.extend({
